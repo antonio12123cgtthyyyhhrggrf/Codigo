@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios en Python y JavaScript</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+    h1 { text-align: center; }
+    .exercise { background: #fff; border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 8px; }
+    .exercise h2 { margin-top: 0; }
+    pre { background: #eee; padding: 10px; overflow-x: auto; }
+    code { font-family: Consolas, monospace; }
+  </style>
+</head>
+<body>
+
+<h1>Ejercicios Matemáticos y Lógicos en Python y JavaScript</h1>
+
+<div class="exercise">
+  <h2>1. El cubo de un número cualquiera</h2>
+  <h3>Python</h3>
+  <pre><code>num = float(input("Introduce un número: "))
+cubo = num ** 3
+print("El cubo es:", cubo)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = prompt("Introduce un número:");
+let cubo = Math.pow(Number(num), 3);
+alert("El cubo es: " + cubo);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>2. Leer un número y dividirlo entre dos</h2>
+  <h3>Python</h3>
+  <pre><code>num = float(input("Número: "))
+print("Mitad:", num / 2)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = prompt("Número:");
+alert("Mitad: " + (Number(num) / 2));</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>3. Área del cuadrado</h2>
+  <h3>Python</h3>
+  <pre><code>lado = float(input("Lado del cuadrado: "))
+area = lado ** 2
+print("Área:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let lado = prompt("Lado del cuadrado:");
+let area = Number(lado) ** 2;
+alert("Área: " + area);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>4. Área de un triángulo</h2>
+  <h3>Python</h3>
+  <pre><code>base = float(input("Base: "))
+altura = float(input("Altura: "))
+area = (base * altura) / 2
+print("Área:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let base = prompt("Base:");
+let altura = prompt("Altura:");
+let area = (Number(base) * Number(altura)) / 2;
+alert("Área: " + area);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>5. Área de un trapecio</h2>
+  <h3>Python</h3>
+  <pre><code>base_mayor = float(input("Base mayor: "))
+base_menor = float(input("Base menor: "))
+altura = float(input("Altura: "))
+area = ((base_mayor + base_menor) * altura) / 2
+print("Área:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let baseMayor = prompt("Base mayor:");
+let baseMenor = prompt("Base menor:");
+let altura = prompt("Altura:");
+let area = ((Number(baseMayor) + Number(baseMenor)) * Number(altura)) / 2;
+alert("Área: " + area);</code></pre>
+</div>
+<div class="exercise">
+  <h2>6. Volumen de un círculo (área del círculo)</h2>
+  <h3>Python</h3>
+  <pre><code>import math
+radio = float(input("Radio del círculo: "))
+area = math.pi * radio ** 2
+print("Área del círculo:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let radio = prompt("Radio del círculo:");
+let area = Math.PI * Math.pow(Number(radio), 2);
+alert("Área del círculo: " + area);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>7. Volumen del cilindro</h2>
+  <h3>Python</h3>
+  <pre><code>import math
+radio = float(input("Radio del cilindro: "))
+altura = float(input("Altura del cilindro: "))
+volumen = math.pi * radio ** 2 * altura
+print("Volumen del cilindro:", volumen)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let radio = prompt("Radio:");
+let altura = prompt("Altura:");
+let volumen = Math.PI * Math.pow(Number(radio), 2) * Number(altura);
+alert("Volumen del cilindro: " + volumen);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>8. Área del rectángulo</h2>
+  <h3>Python</h3>
+  <pre><code>base = float(input("Base: "))
+altura = float(input("Altura: "))
+area = base * altura
+print("Área del rectángulo:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let base = prompt("Base:");
+let altura = prompt("Altura:");
+let area = Number(base) * Number(altura);
+alert("Área del rectángulo: " + area);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>9. Sacar el IVA de un producto (16%)</h2>
+  <h3>Python</h3>
+  <pre><code>precio = float(input("Precio del producto: "))
+iva = precio * 0.16
+print("IVA:", iva)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let precio = prompt("Precio del producto:");
+let iva = Number(precio) * 0.16;
+alert("IVA: " + iva);</code></pre>
+</div>
+
+<div class="exercise">
+  <h2>10. Grados Fahrenheit a Celsius</h2>
+  <h3>Python</h3>
+  <pre><code>f = float(input("Grados Fahrenheit: "))
+c = (f - 32) * 5/9
+print("Celsius:", c)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let f = prompt("Grados Fahrenheit:");
+let c = (Number(f) - 32) * 5/9;
+alert("Celsius: " + c);</code></pre>
+</div><div class="exercise" id="e11">
+  <h2>11. Libras a kilos</h2>
+  <h3>Python</h3>
+  <pre><code>libras = float(input("Libras: "))
+kilos = libras * 0.453592
+print("Kilogramos:", kilos)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let libras = prompt("Libras:");
+let kilos = Number(libras) * 0.453592;
+alert("Kilogramos: " + kilos);</code></pre>
+</div>
+
+<div class="exercise" id="e12">
+  <h2>12. Celsius a Fahrenheit</h2>
+  <h3>Python</h3>
+  <pre><code>c = float(input("Celsius: "))
+f = (c * 9/5) + 32
+print("Fahrenheit:", f)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let c = prompt("Celsius:");
+let f = (Number(c) * 9/5) + 32;
+alert("Fahrenheit: " + f);</code></pre>
+</div>
+
+<div class="exercise" id="e13">
+  <h2>13. De kilos a gramos y kilogramos a toneladas</h2>
+  <h3>Python</h3>
+  <pre><code>kilos = float(input("Kilogramos: "))
+gramos = kilos * 1000
+toneladas = kilos / 1000
+print("Gramos:", gramos)
+print("Toneladas:", toneladas)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let kilos = prompt("Kilogramos:");
+let gramos = Number(kilos) * 1000;
+let toneladas = Number(kilos) / 1000;
+alert("Gramos: " + gramos + "\nToneladas: " + toneladas);</code></pre>
+</div>
+
+<div class="exercise" id="e14">
+  <h2>14. Calcular la pendiente</h2>
+  <h3>Python</h3>
+  <pre><code>x1 = float(input("x1: "))
+y1 = float(input("y1: "))
+x2 = float(input("x2: "))
+y2 = float(input("y2: "))
+pendiente = (y2 - y1) / (x2 - x1)
+print("Pendiente:", pendiente)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let x1 = prompt("x1:");
+let y1 = prompt("y1:");
+let x2 = prompt("x2:");
+let y2 = prompt("y2:");
+let pendiente = (Number(y2) - Number(y1)) / (Number(x2) - Number(x1));
+alert("Pendiente: " + pendiente);</code></pre>
+</div>
+
+<div class="exercise" id="e15">
+  <h2>15. Si el valor es negativo o positivo</h2>
+  <h3>Python</h3>
+  <pre><code>num = float(input("Número: "))
+if num > 0:
+    print("Positivo")
+elif num < 0:
+    print("Negativo")
+else:
+    print("Cero")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = prompt("Número:");
+num = Number(num);
+if (num > 0) alert("Positivo");
+else if (num < 0) alert("Negativo");
+else alert("Cero");</code></pre>
+</div>
+<div class="exercise" id="e16">
+  <h2>16. Aprobar si un número es divisible entre 2</h2>
+  <h3>Python</h3>
+  <pre><code>num = int(input("Número: "))
+if num % 2 == 0:
+    print("Es divisible entre 2")
+else:
+    print("No es divisible entre 2")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = prompt("Número:");
+if (Number(num) % 2 === 0)
+    alert("Es divisible entre 2");
+else
+    alert("No es divisible entre 2");</code></pre>
+</div>
+
+<div class="exercise" id="e17">
+  <h2>17. Leer si un número es divisible entre 3, 9, 15, 19, 27, 34, 39</h2>
+  <h3>Python</h3>
+  <pre><code>num = int(input("Número: "))
+for div in [3, 9, 15, 19, 27, 34, 39]:
+    if num % div == 0:
+        print(f"Divisible entre {div}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = Number(prompt("Número:"));
+[3, 9, 15, 19, 27, 34, 39].forEach(div => {
+  if (num % div === 0) alert("Divisible entre " + div);
+});</code></pre>
+</div>
+
+<div class="exercise" id="e18">
+  <h2>18. Leer un número entre 5 y 10</h2>
+  <h3>Python</h3>
+  <pre><code>num = int(input("Número entre 5 y 10: "))
+if 5 <= num <= 10:
+    print("Correcto")
+else:
+    print("Incorrecto")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = Number(prompt("Número entre 5 y 10:"));
+if (num >= 5 && num <= 10)
+  alert("Correcto");
+else
+  alert("Incorrecto");</code></pre>
+</div>
+
+<div class="exercise" id="e19">
+  <h2>19. Leer calificación y aprobar si es ≥ 7</h2>
+  <h3>Python</h3>
+  <pre><code>calif = float(input("Calificación: "))
+if calif >= 7:
+    print("Aprobado")
+else:
+    print("Reprobado")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let calif = Number(prompt("Calificación:"));
+if (calif >= 7)
+  alert("Aprobado");
+else
+  alert("Reprobado");</code></pre>
+</div>
+
+<div class="exercise" id="e20">
+  <h2>20. Clasificación de calificaciones</h2>
+  <h3>Python</h3>
+  <pre><code>nota = float(input("Calificación: "))
+if 6 <= nota < 7:
+    print("Regular")
+elif 7 <= nota < 8:
+    print("Bueno")
+elif 8 <= nota < 9:
+    print("Muy Bueno")
+elif 9 <= nota <= 10:
+    print("Excelente")
+else:
+    print("Fuera de rango")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let nota = Number(prompt("Calificación:"));
+if (nota >= 6 && nota < 7)
+  alert("Regular");
+else if (nota >= 7 && nota < 8)
+  alert("Bueno");
+else if (nota >= 8 && nota < 9)
+  alert("Muy Bueno");
+else if (nota >= 9 && nota <= 10)
+  alert("Excelente");
+else
+  alert("Fuera de rango");</code></pre>
+</div>
+<div class="exercise" id="e21">
+  <h2>21. Tabla de multiplicar del 2</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(1, 11):
+    print(f"2 x {i} = {2 * i}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 1; i <= 10; i++) {
+  console.log(2 x ${i} = ${2 * i});
+}</code></pre>
+</div>
+
+<div class="exercise" id="e22">
+  <h2>22. Tabla de multiplicar del 5</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 1; i <= 10; i++) {
+  console.log(5 x ${i} = ${5 * i});
+}</code></pre>
+</div>
+
+<div class="exercise" id="e23">
+  <h2>23. Imprimir los 10 primeros números primos</h2>
+  <h3>Python</h3>
+  <pre><code>def es_primo(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+contador = 0
+num = 2
+while contador < 10:
+    if es_primo(num):
+        print(num)
+        contador += 1
+    num += 1</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>function esPrimo(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+let contador = 0;
+let num = 2;
+while (contador < 10) {
+  if (esPrimo(num)) {
+    console.log(num);
+    contador++;
+  }
+  num++;
+}</code></pre>
+</div>
+
+<div class="exercise" id="e24">
+  <h2>24. Números pares del 0 al 20</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(0, 21, 2):
+    print(i)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 0; i <= 20; i += 2) {
+  console.log(i);
+}</code></pre>
+</div>
+
+<div class="exercise" id="e25">
+  <h2>25. Números impares del 1 al 15</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(1, 16, 2):
+    print(i)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 1; i <= 15; i += 2) {
+  console.log(i);
+}</code></pre>
+</div>
+<div class="exercise" id="e26">
+  <h2>26. Vocales en la palabra "Santiago"</h2>
+  <h3>Python</h3>
+  <pre><code>palabra = "Santiago"
+vocales = [letra for letra in palabra if letra.lower() in "aeiou"]
+print("Vocales:", vocales)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let palabra = "Santiago";
+let vocales = [...palabra].filter(l => "aeiouAEIOU".includes(l));
+console.log("Vocales:", vocales);</code></pre>
+</div>
+
+<div class="exercise" id="e27">
+  <h2>27. Sumatoria del rango 1000 a 10,000</h2>
+  <h3>Python</h3>
+  <pre><code>total = sum(range(1000, 10001))
+print("Sumatoria:", total)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let total = 0;
+for (let i = 1000; i <= 10000; i++) total += i;
+console.log("Sumatoria:", total);</code></pre>
+</div>
+
+<div class="exercise" id="e28">
+  <h2>28. Números pares entre 5 y 15</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(6, 15, 2):
+    print(i)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 6; i < 15; i += 2) {
+  console.log(i);
+}</code></pre>
+</div>
+
+<div class="exercise" id="e29">
+  <h2>29. Leer calificaciones de 38 alumnos y generar promedio</h2>
+  <h3>Python</h3>
+  <pre><code>calificaciones = [float(input(f"Calificación {i+1}: ")) for i in range(38)]
+promedio = sum(calificaciones) / 38
+print("Promedio:", promedio)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let calificaciones = [];
+for (let i = 0; i < 38; i++) {
+  calificaciones.push(Number(prompt("Calificación " + (i + 1))));
+}
+let suma = calificaciones.reduce((a, b) => a + b, 0);
+console.log("Promedio:", suma / 38);</code></pre>
+</div>
+
+<div class="exercise" id="e30">
+  <h2>30. Calcular el número mayor y menor de 20 números</h2>
+  <h3>Python</h3>
+  <pre><code>numeros = [int(input(f"Número {i+1}: ")) for i in range(20)]
+print("Mayor:", max(numeros))
+print("Menor:", min(numeros))</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let numeros = [];
+for (let i = 0; i < 20; i++) {
+  numeros.push(Number(prompt("Número " + (i + 1))));
+}
+console.log("Mayor:", Math.max(...numeros));
+console.log("Menor:", Math.min(...numeros));</code></pre>
+</div>
+<div class="exercise" id="e31">
+  <h2>31. Determinar si un número es primo</h2>
+  <h3>Python</h3>
+  <pre><code>n = int(input("Número: "))
+es_primo = n > 1 and all(n % i != 0 for i in range(2, int(n**0.5)+1))
+print("Es primo" if es_primo else "No es primo")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let n = Number(prompt("Número:"));
+let esPrimo = n > 1 && [...Array(n - 2).keys()].map(i => i + 2).every(i => n % i !== 0);
+alert(esPrimo ? "Es primo" : "No es primo");</code></pre>
+</div>
+
+<div class="exercise" id="e32">
+  <h2>32. Leer los lugares vacíos de una matriz 3x3</h2>
+  <h3>Python</h3>
+  <pre><code>matriz = [[input(f"({i},{j}): ") for j in range(3)] for i in range(3)]
+for i in range(3):
+    for j in range(3):
+        if matriz[i][j] == "":
+            print(f"Lugar vacío en ({i},{j})")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let matriz = [];
+for (let i = 0; i < 3; i++) {
+  matriz[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matriz[i][j] = prompt((${i},${j}):);
+  }
+}
+matriz.forEach((row, i) => {
+  row.forEach((val, j) => {
+    if (val === "") console.log(Lugar vacío en (${i},${j}));
+  });
+});</code></pre>
+</div>
+
+<div class="exercise" id="e33">
+  <h2>33. Leer caracteres en vector de 5 posiciones e imprimir</h2>
+  <h3>Python</h3>
+  <pre><code>vector = [input(f"Carácter {i+1}: ") for i in range(5)]
+print("Vector:", vector)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let vector = [];
+for (let i = 0; i < 5; i++) {
+  vector.push(prompt(Carácter ${i+1}:));
+}
+console.log("Vector:", vector);</code></pre>
+</div>
+
+<div class="exercise" id="e34">
+  <h2>34. Almacenar temperaturas en °C de 10 pacientes</h2>
+  <h3>Python</h3>
+  <pre><code>temperaturas = [float(input(f"Temperatura paciente {i+1}: ")) for i in range(10)]
+print("Temperaturas:", temperaturas)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let temperaturas = [];
+for (let i = 0; i < 10; i++) {
+  temperaturas.push(Number(prompt(Temperatura paciente ${i+1}:)));
+}
+console.log("Temperaturas:", temperaturas);</code></pre>
+</div>
+
+<div class="exercise" id="e35">
+  <h2>35. Almacenar toneladas mensuales del 2024 en vector</h2>
+  <h3>Python</h3>
+  <pre><code>toneladas = [float(input(f"Toneladas en mes {i+1}: ")) for i in range(12)]
+print("Toneladas 2024:", toneladas)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let toneladas = [];
+for (let i = 0; i < 12; i++) {
+  toneladas.push(Number(prompt(Toneladas en mes ${i+1}:)));
+}
+console.log("Toneladas 2024:", toneladas);</code></pre>
+</div>
+<div class="exercise" id="e36">
+  <h2>36. Leer 10 caracteres en un vector</h2>
+  <h3>Python</h3>
+  <pre><code>vector = [input(f"Carácter {i+1}: ") for i in range(10)]
+print("Vector:", vector)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let vector = [];
+for (let i = 0; i < 10; i++) {
+  vector.push(prompt(Carácter ${i+1}:));
+}
+console.log("Vector:", vector);</code></pre>
+</div>
+
+<div class="exercise" id="e37">
+  <h2>37. Imprimir un vector de 500 posiciones</h2>
+  <h3>Python</h3>
+  <pre><code>vector = [i for i in range(500)]
+print("Vector de 500 posiciones:", vector)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let vector = [];
+for (let i = 0; i < 500; i++) {
+  vector.push(i);
+}
+console.log("Vector de 500 posiciones:", vector);</code></pre>
+</div>
+
+<div class="exercise" id="e38">
+  <h2>38. Representar la matriz identidad 5x5</h2>
+  <h3>Python</h3>
+  <pre><code>matriz_identidad = [[1 if i == j else 0 for j in range(5)] for i in range(5)]
+for fila in matriz_identidad:
+    print(fila)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let matrizIdentidad = [];
+for (let i = 0; i < 5; i++) {
+  let fila = [];
+  for (let j = 0; j < 5; j++) {
+    fila.push(i === j ? 1 : 0);
+  }
+  matrizIdentidad.push(fila);
+}
+console.log("Matriz Identidad 5x5:", matrizIdentidad);</code></pre>
+</div>
+
+<div class="exercise" id="e39">
+  <h2>39. Sumar dos vectores unidimensionales</h2>
+  <h3>Python</h3>
+  <pre><code>vector1 = [1, 2, 3]
+vector2 = [4, 5, 6]
+suma = [x + y for x, y in zip(vector1, vector2)]
+print("Suma de los vectores:", suma)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let vector1 = [1, 2, 3];
+let vector2 = [4, 5, 6];
+let suma = vector1.map((x, i) => x + vector2[i]);
+console.log("Suma de los vectores:", suma);</code></pre>
+</div>
+
+<div class="exercise" id="e40">
+  <h2>40. Imprimir lugares vacíos en una matriz 3x3</h2>
+  <h3>Python</h3>
+  <pre><code>matriz = [[input(f"({i},{j}): ") for j in range(3)] for i in range(3)]
+for i in range(3):
+    for j in range(3):
+        if matriz[i][j] == "":
+            print(f"Lugar vacío en ({i},{j})")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let matriz = [];
+for (let i = 0; i < 3; i++) {
+  matriz[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matriz[i][j] = prompt((${i},${j}):);
+  }
+}
+matriz.forEach((row, i) => {
+  row.forEach((val, j) => {
+    if (val === "") console.log(Lugar vacío en (${i},${j}));
+  });
+});</code></pre>
+</div>
+<div class="exercise" id="e41">
+  <h2>41. Leer dos números, imprimir mayor y menor</h2>
+  <h3>Python</h3>
+  <pre><code>a = int(input("Número 1: "))
+b = int(input("Número 2: "))
+print("Mayor:", max(a, b))
+print("Menor:", min(a, b))</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let a = Number(prompt("Número 1:"));
+let b = Number(prompt("Número 2:"));
+console.log("Mayor:", Math.max(a, b));
+console.log("Menor:", Math.min(a, b));</code></pre>
+</div>
+
+<div class="exercise" id="e42">
+  <h2>42. Leer tres números, imprimir mayor y menor</h2>
+  <h3>Python</h3>
+  <pre><code>a = int(input("Número 1: "))
+b = int(input("Número 2: "))
+c = int(input("Número 3: "))
+print("Mayor:", max(a, b, c))
+print("Menor:", min(a, b, c))</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let a = Number(prompt("Número 1:"));
+let b = Number(prompt("Número 2:"));
+let c = Number(prompt("Número 3:"));
+console.log("Mayor:", Math.max(a, b, c));
+console.log("Menor:", Math.min(a, b, c));</code></pre>
+</div>
+
+<div class="exercise" id="e43">
+  <h2>43. Calificación de alumnos: Reprobado, Aprobado, Aprobado Medio, Aprobado Excelente</h2>
+  <h3>Python</h3>
+  <pre><code>calificacion = float(input("Ingrese la calificación: "))
+if calificacion <= 5.5:
+    print("Reprobado")
+elif calificacion <= 7.5:
+    print("Aprobado Bajo")
+elif calificacion <= 8.5:
+    print("Aprobado Medio")
+else:
+    print("Aprobado Excelente")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let calificacion = Number(prompt("Ingrese la calificación:"));
+if (calificacion <= 5.5) {
+  alert("Reprobado");
+} else if (calificacion <= 7.5) {
+  alert("Aprobado Bajo");
+} else if (calificacion <= 8.5) {
+  alert("Aprobado Medio");
+} else {
+  alert("Aprobado Excelente");
+}</code></pre>
+</div>
+
+<div class="exercise" id="e44">
+  <h2>44. Sumar todos los datos ingresados hasta que pongan cero</h2>
+  <h3>Python</h3>
+  <pre><code>suma = 0
+while True:
+    numero = int(input("Ingresa un número (0 para terminar): "))
+    if numero == 0:
+        break
+    suma += numero
+print("La suma total es:", suma)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let suma = 0;
+let numero;
+do {
+  numero = Number(prompt("Ingresa un número (0 para terminar):"));
+  suma += numero;
+} while (numero !== 0);
+console.log("La suma total es:", suma);</code></pre>
+</div>
+
+<div class="exercise" id="e45">
+  <h2>45. Secuencia Fibonacci hasta el 100, imprimir las primeras 35</h2>
+  <h3>Python</h3>
+  <pre><code>a, b = 0, 1
+contador = 0
+while a <= 100:
+    print(a)
+    a, b = b, a + b
+    contador += 1
+    if contador == 35:
+        break</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let a = 0, b = 1, contador = 0;
+while (a <= 100) {
+  console.log(a);
+  let temp = a;
+  a = b;
+  b = temp + b;
+  contador++;
+  if (contador === 35) break;
+}</code></pre>
+</div>
+<div class="exercise" id="e46">
+  <h2>46. Leer 10 números enteros, imprimir los pares</h2>
+  <h3>Python</h3>
+  <pre><code>for i in range(10):
+    num = int(input(f"Ingrese el número {i+1}: "))
+    if num % 2 == 0:
+        print(f"Par: {num}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>for (let i = 0; i < 10; i++) {
+  let num = Number(prompt(Ingrese el número ${i + 1}:));
+  if (num % 2 === 0) {
+    console.log(Par: ${num});
+  }
+}</code></pre>
+</div>
+
+<div class="exercise" id="e47">
+  <h2>47. Leer los precios de productos e imprimir el IVA (16%) de cada uno</h2>
+  <h3>Python</h3>
+  <pre><code# Leer precios y calcular el IVA
+precios = [float(input("Precio del producto: ")) for _ in range(5)]
+iva = 0.16
+for precio in precios:
+    print(f"IVA de ${precio}: ${precio * iva}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let precios = [];
+for (let i = 0; i < 5; i++) {
+  precios.push(Number(prompt("Precio del producto:")));
+}
+precios.forEach(precio => {
+  let iva = precio * 0.16;
+  console.log(IVA de $${precio}: $${iva});
+});</code></pre>
+</div>
+
+<div class="exercise" id="e48">
+  <h2>48. Algoritmo para ventas de autos (total de ventas)</h2>
+  <h3>Python</h3>
+  <pre><code# Ventas de autos de agencia patito
+ventas_totales = 0
+while True:
+    venta = input("Ingrese monto de venta del auto (o 'fin' para terminar): ")
+    if venta == 'fin':
+        break
+    ventas_totales += float(venta)
+print(f"Total de ventas: ${ventas_totales}")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let ventasTotales = 0;
+while (true) {
+  let venta = prompt("Ingrese monto de venta del auto (o 'fin' para terminar):");
+  if (venta.toLowerCase() === "fin") {
+    break;
+  }
+  ventasTotales += parseFloat(venta);
+}
+console.log(Total de ventas: $${ventasTotales});</code></pre>
+</div>
+
+<div class="exercise" id="e49">
+  <h2>49. Almacenar números enteros en un vector de 3x3</h2>
+  <h3>Python</h3>
+  <pre><code# Almacenar en un vector 3x3
+matriz = [[int(input(f"Ingrese número en ({i+1},{j+1}): ")) for j in range(3)] for i in range(3)]
+print("Matriz:", matriz)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let matriz = [];
+for (let i = 0; i < 3; i++) {
+  matriz[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matriz[i][j] = parseInt(prompt(Ingrese número en (${i+1},${j+1}):));
+  }
+}
+console.log("Matriz:", matriz);</code></pre>
+</div>
+
+<div class="exercise" id="e50">
+  <h2>50. Almacenar la tabla del 5 en un vector</h2>
+  <h3>Python</h3>
+  <pre><code# Almacenar la tabla del 5
+tabla_5 = [5 * i for i in range(1, 11)]
+print("Tabla del 5:", tabla_5)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let tabla5 = [];
+for (let i = 1; i <= 10; i++) {
+  tabla5.push(5 * i);
+}
+console.log("Tabla del 5:", tabla5);</code></pre>
+</div>
+<div class="exercise" id="e51">
+  <h2>51. Cuadrado de un número</h2>
+  <h3>Python</h3>
+  <pre><code>num = float(input("Ingresa un número: "))
+print("Cuadrado:", num ** 2)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let num = Number(prompt("Ingresa un número:"));
+console.log("Cuadrado:", num ** 2);</code></pre>
+</div>
+
+<div class="exercise" id="e52">
+  <h2>52. Calcular el área del triángulo</h2>
+  <h3>Python</h3>
+  <pre><code>base = float(input("Base del triángulo: "))
+altura = float(input("Altura del triángulo: "))
+area = (base * altura) / 2
+print("Área del triángulo:", area)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let base = Number(prompt("Base del triángulo:"));
+let altura = Number(prompt("Altura del triángulo:"));
+let area = (base * altura) / 2;
+console.log("Área del triángulo:", area);</code></pre>
+</div>
+
+<div class="exercise" id="e53">
+  <h2>53. Convertir grados Celsius a Fahrenheit</h2>
+  <h3>Python</h3>
+  <pre><code>celsius = float(input("Grados Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Grados Fahrenheit:", fahrenheit)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let celsius = Number(prompt("Grados Celsius:"));
+let fahrenheit = (celsius * 9/5) + 32;
+console.log("Grados Fahrenheit:", fahrenheit);</code></pre>
+</div>
+
+<div class="exercise" id="e54">
+  <h2>54. Imprimir "Hola CBTIS 251"</h2>
+  <h3>Python</h3>
+  <pre><code>print("Hola CBTIS 251")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>console.log("Hola CBTIS 251");</code></pre>
+</div>
+
+<div class="exercise" id="e55">
+  <h2>55. Multiplicación de un número por sí mismo</h2>
+  <h3>Python</h3>
+  <pre><code>n = float(input("Número: "))
+print("Multiplicación por sí mismo:", n * n)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let n = Number(prompt("Número:"));
+console.log("Multiplicación por sí mismo:", n * n);</code></pre>
+</div>
+<div class="exercise" id="e56">
+  <h2>56. Leer dos números, sumarlos, multiplicarlos, dividirlos y mostrar los resultados</h2>
+  <h3>Python</h3>
+  <pre><code>a = float(input("Primer número: "))
+b = float(input("Segundo número: "))
+print("Suma:", a + b)
+print("Multiplicación:", a * b)
+print("División:", a / b if b != 0 else "No se puede dividir entre cero")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let a = Number(prompt("Primer número:"));
+let b = Number(prompt("Segundo número:"));
+console.log("Suma:", a + b);
+console.log("Multiplicación:", a * b);
+console.log("División:", b !== 0 ? a / b : "No se puede dividir entre cero");</code></pre>
+</div>
+
+<div class="exercise" id="e57">
+  <h2>57. Determinar si un número es par o impar</h2>
+  <h3>Python</h3>
+  <pre><code>n = int(input("Número: "))
+if n % 2 == 0:
+    print("Par")
+else:
+    print("Impar")</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let n = Number(prompt("Número:"));
+console.log(n % 2 === 0 ? "Par" : "Impar");</code></pre>
+</div>
+
+<div class="exercise" id="e58">
+  <h2>58. Convertir kilogramos a gramos</h2>
+  <h3>Python</h3>
+  <pre><code>kg = float(input("Kilogramos: "))
+print("Gramos:", kg * 1000)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let kg = Number(prompt("Kilogramos:"));
+console.log("Gramos:", kg * 1000);</code></pre>
+</div>
+
+<div class="exercise" id="e59">
+  <h2>59. Convertir kilogramos a toneladas</h2>
+  <h3>Python</h3>
+  <pre><code>kg = float(input("Kilogramos: "))
+print("Toneladas:", kg / 1000)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let kg = Number(prompt("Kilogramos:"));
+console.log("Toneladas:", kg / 1000);</code></pre>
+</div>
+
+<div class="exercise" id="e60">
+  <h2>60. Calcular el volumen del cilindro</h2>
+  <h3>Python</h3>
+  <pre><code>import math
+radio = float(input("Radio del cilindro: "))
+altura = float(input("Altura del cilindro: "))
+volumen = math.pi * radio ** 2 * altura
+print("Volumen del cilindro:", volumen)</code></pre>
+  <h3>JavaScript</h3>
+  <pre><code>let radio = Number(prompt("Radio del cilindro:"));
+let altura = Number(prompt("Altura del cilindro:"));
+let volumen = Math.PI * Math.pow(radio, 2) * altura;
+console.log("Volumen del cilindro:", volumen);</code></pre>
+</div>
